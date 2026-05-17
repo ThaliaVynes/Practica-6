@@ -14,16 +14,16 @@
     <section class="bg-[#3a5a40] flex flex-col justify-center items-center py-2 px2 m-4  rounded-2xl">
       <div class="">
       <label class="font-bold text-2xl px-21 " for="monto">Monto</label> <br>
-      <input  class=" bg-[#656662]  border-1  m-2 w-58 h-12 p-3 text-center rounded-sm text-black font-semibold "  type="number" id="monto" placeholder="Ingrese el Monto">
+      <input  class=" bg-[#656662]  border-1  m-2 w-58 h-12 p-3 text-center rounded-sm text-black font-semibold "  type="number" id="monto"  placeholder="Ingrese el Monto">
       </div>
       <div class="p-5">
-        <button id="depositar" class="border-1 w-20 p-1 font-semibold  rounded-sm bg-[#46853d] text-[#2c2c2a] " type="button">Depositar</button>
-         <button id="retirar" class="border-1 w-16 p-1  rounded-sm  bg-[#b45241] text-[#2c2c2a] " type="button">Retirar</button>
+        <button onclick="depositar()" id="depositar"  class="border-1 w-20 p-1 font-semibold  rounded-sm bg-[#46853d] text-[#2c2c2a] " type="button">Depositar</button>
+         <button onclick="retirar()" id="retirar"  class="border-1 w-16 p-1  rounded-sm  bg-[#b45241] text-[#2c2c2a] " type="button">Retirar</button>
       </div>
       <div class=" flex flex-col">
-        <p  class="w-50 h-6 text-center  bg-[#656662] text-black font-semibold border-1 border-b-gray-700" id="saldo">******</p>
+        <p  class="w-50 h-6 text-center  bg-[#656662] text-black font-semibold border-1 border-b-gray-700" id="saldoTexto">******</p>
 
-      <button class="border-1 m-1 py-0  bg-[#344e41]" id="saldo" onclick="mostrarSaldo()">
+      <button onclick="mostrarSaldo()" class="border-1 m-1 py-0  bg-[#344e41]" id="verSaldo" >
        Ver saldo
        </button>
 
