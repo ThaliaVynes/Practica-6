@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./practica 6/ejercicio6.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>practica6java</title>
+  </head>
+  <body class="bg-[#dad7cd] flex flex-col justify-center items-center min-h-screen ">
+    <div class="bg-[#344e41] flex flex-col rounded-2xl  w-79 border-1 ">
+     <img class="p-4 rounded-e-full " src="./src/assets/imgbanco_6.png" alt="Img de logo">
+    <section class="bg-[#3a5a40] flex flex-col justify-center items-center py-2 px2 m-4  rounded-2xl">
+      <div class="">
+      <label class="font-bold text-2xl px-21 " for="monto">Monto</label> <br>
+      <input  class=" bg-[#656662]  border-1  m-2 w-58 h-12 p-3 text-center rounded-sm text-black font-semibold "  type="number" id="monto" placeholder="Ingrese el Monto">
+      </div>
+      <div class="p-5">
+        <button id="depositar" class="border-1 w-20 p-1 font-semibold  rounded-sm bg-[#46853d] text-[#2c2c2a] " type="button">Depositar</button>
+         <button id="retirar" class="border-1 w-16 p-1  rounded-sm  bg-[#b45241] text-[#2c2c2a] " type="button">Retirar</button>
+      </div>
+      <div class=" flex flex-col">
+        <p  class="w-50 h-6 text-center  bg-[#656662] text-black font-semibold border-1 border-b-gray-700" id="saldo">******</p>
+
+      <button class="border-1 m-1 py-0  bg-[#344e41]" id="saldo" onclick="mostrarSaldo()">
+       Ver saldo
+       </button>
+
+      </div>
+
+    </section>
+</div>
+  </body>
+</html>
